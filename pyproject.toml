@@ -1,0 +1,27 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "netrics-fast"
+version = "0.1.0"
+description = "Memory-efficient dyadic regression with DR_bc standard errors (Graham, forthcoming)"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.9"
+authors = [
+    { name = "Xiang Ao" },
+]
+dependencies = [
+    "numpy>=1.22",
+]
+
+[project.optional-dependencies]
+test = [
+    "pytest>=7",
+    "pyreadr",
+    "pandas",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
