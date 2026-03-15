@@ -7,7 +7,7 @@ Fast reimplementation of `netrics.dyadic_regression` using chunked O(nK) scatter
 ## Install
 
 ```bash
-pip install -e .
+pip install git+https://github.com/xiangao/netrics-fast.git
 ```
 
 ## Usage
