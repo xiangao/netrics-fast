@@ -1,8 +1,11 @@
 # netrics-fast
 
-Memory-efficient dyadic regression with bias-corrected dyadic-robust (DR_bc) standard errors, following Graham (forthcoming, *Handbook of Econometrics*).
+`netrics-fast` is a memory-conscious implementation of dyadic regression with
+bias-corrected dyadic-robust standard errors, following Graham (forthcoming,
+*Handbook of Econometrics*).
 
-Fast reimplementation of `netrics.dyadic_regression` using chunked O(nK) scatter-add Hajek projection — handles 100M+ dyads without materializing the full score matrix.
+It reimplements `netrics.dyadic_regression` using a chunked O(nK) scatter-add
+Hajek projection, so the full score matrix does not have to be materialized.
 
 ## Install
 
